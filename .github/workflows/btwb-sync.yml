@@ -2,41 +2,15 @@ name: Synchroniseer BTWB WODs
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '15 4 * * *' # 05:15 wintertijd / 06:15 zomertijd in Nederland
 
 permissions:
-  contents: write
+  contents: read
 
-concurrency:
-  group: btwb-sync
-  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install dependencies
-        run: |
-          pip install playwright==1.56.0 beautifulsoup4==4.14.2
-          python -m playwright install --with-deps chromium
-      - name: Fetch BTWB CrossFit workouts
-        env:
-          BTWB_EMAIL: ${{ secrets.BTWB_EMAIL }}
-          BTWB_PASSWORD: ${{ secrets.BTWB_PASSWORD }}
-          BTWB_MEMBER_ID: ${{ secrets.BTWB_MEMBER_ID }}
-        run: python scripts/sync_btwb.py
-      - name: Publish WOD data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/wods.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update upcoming CrossFit WODs"
-            git push
-          fi
+      - name: Diagnose BTWB-workflow
+        run: echo "BTWB-workflow start correct"
