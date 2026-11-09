@@ -79,12 +79,25 @@ def main():
         for offset in range(14):
             day = today + timedelta(days=offset)
             url = f"{BASE}/members/{member_id}/whiteboard/day?d={day.isoformat()}"
-            response = context.request.get(url, timeout=30000)
+            response = context.request.get(
+                url,
+                timeout=30000,
+                headers={
+                    "Accept": "text/javascript, application/javascript, application/ecmascript, */*; q=0.01",
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Referer": BASE + "/whiteboard",
+                },
+            )
             if not response.ok or "login" in response.url:
                 raise RuntimeError(f"BTWB request failed for {day.isoformat()}: HTTP {response.status}")
             content = response.text()
             if "<html" in content[:500].lower() and ("sign in" in content.lower() or "log in" in content.lower()):
                 raise RuntimeError("BTWB session was not authenticated")
+            if "document.getElementById" not in content and "whiteboard-wods-panel" in content:
+                raise RuntimeError(
+                    f"BTWB returned full-page HTML instead of day AJAX data for {day.isoformat()}; "
+                    "check authentication and request headers"
+                )
             html = extract_html(content)
             if offset == 0:
                 soup = BeautifulSoup(html, "html.parser")
