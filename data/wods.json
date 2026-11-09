@@ -1,17 +1,56 @@
 {
-  "updated_at": "2026-11-09T20:01:29.539080+01:00",
+  "updated_at": "2026-11-09T20:11:16.719523+01:00",
   "days": [
     {
       "date": "2026-11-09",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "Strength Cycle - Deadlift",
+          "description": "Deadlift 1x10 at 15% 1RM\nDeadlift 1x8 at 50% 1RM\nDeadlift 1x5 at 60% 1RM\nDeadlift 1x5 at 80% 1RM\nDeadlift 1x3 at 83% 1RM\nDeadlift 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
+        },
+        {
+          "title": "\"Anchor Point\"",
+          "description": "For time:\n3 rounds of:\n12 V-ups\n6 Strict Pull-ups\n6 Deadlifts, 100/70 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n10 V-ups\n5 Strict Pull-ups\n5 Deadlifts, 115/80 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n8 V-ups\n4 Strict Pull-ups\n4 Deadlifts, 125/85 kg"
+        },
+        {
+          "title": "Performance",
+          "description": "For time:\n3 rounds of:\n12 GHD Sit-ups\n6 Strict Pull-ups\n6 Deadlifts, 110/80 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n10 GHD Sit-ups\n5 Strict Pull-ups\n5 Deadlifts, 120/90 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n8 GHD Sit-ups\n4 Strict Pull-ups\n4 Deadlifts, 130/105 kg"
+        }
+      ]
     },
     {
       "date": "2026-11-10",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "Strength Cycle - Jerk",
+          "description": "Jerk 1x10 at 15% 1RM\nJerk 1x8 at 50% 1RM\nJerk 1x5 at 60% 1RM\nJerk 1x5 at 80% 1RM\nJerk 1x3 at 83% 1RM\nJerk 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
+        },
+        {
+          "title": "\"Fuse\"",
+          "description": "Complete as many rounds as possible in 7 mins of:\n7 Push Press, 50/35 kg\n7 Lateral Burpee Over Bars"
+        },
+        {
+          "title": "BTWB Meetwaarde - 1600m run",
+          "description": "Run 1600 m\n\nThis is an all out effort for time."
+        }
+      ]
     },
     {
       "date": "2026-11-11",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "Strength Cycle - Backsquat",
+          "description": "Back Squat 1x10 at 15% 1RM\nBack Squat 1x8 at 50% 1RM\nBack Squat 1x5 at 60% 1RM\nBack Squat 1x5 at 80% 1RM\nBack Squat 1x3 at 83% 1RM\nBack Squat 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
+        },
+        {
+          "title": "\"Three-Piece\"",
+          "description": "4 rounds for time of:\n20/16 Echo Bikes\n20 Kettlebell Goblet Squats, 24/16 kg\n60 Double Unders"
+        },
+        {
+          "title": "Performance",
+          "description": "4 rounds for time of:\n20/16 Echo Bikes\n20 Kettlebell Goblet Squats, 32/24 kg\n100 Double Unders"
+        }
+      ]
     },
     {
       "date": "2026-11-12",
@@ -19,27 +58,81 @@
     },
     {
       "date": "2026-11-13",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "TEAMWOD",
+          "description": "For time:\n9 rounds of:\n3 Burpee Box Jumps, 24/20 in\n6 Chest-to-bar Pull-ups\n9 Power Cleans, 40/30 kg\nRow, 1200 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Chest-to-bar Pull-ups\n12 Power Cleans, 40/30 kg\nRow, 2400 m\n-- then --\nRest 3 mins\n-- then --\n6 Burpee Box Jumps, 24/20 in\n12 Chest-to-bar Pull-ups\n15 Power Cleans, 40/30 kg\nRow, 3000 m"
+        },
+        {
+          "title": "TEAMWOD - Performance",
+          "description": "For time:\n9 rounds of:\n2 Burpee Box Jumps, 24/20 in\n6 Muscle-ups\n9 Power Cleans, 40/30 kg\nRow, 1200/900 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Muscle-ups\n12 Power Cleans, 40/30 kg\nRow, 1500/1200 m\n-- then --\nRest 3 mins\n-- then --\n6 Burpee Box Jumps, 24/20 in\n12 Muscle-ups\n15 Power Cleans, 40/30 kg\nRow, 1800/1500 m"
+        }
+      ]
     },
     {
       "date": "2026-11-14",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "DUO WOD \"Full Tank\"",
+          "description": "5 rounds for time of:\nRun (Together), 400 m\n24 Box Jumps, 24/20 in\n24 Wall Balls, 9/6 kg\n24 American Kettlebell Swings, 32/24 kg"
+        },
+        {
+          "title": "Performance",
+          "description": "5 rounds for time of:\nRun (Together), 400 m\n24 Box Jumps, 24/20 in\n24 Wall Balls, 9/6 kg\n24 Russian Kettlebell Swings, 32/24 kg"
+        }
+      ]
     },
     {
       "date": "2026-11-15",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "\"Level Set\"",
+          "description": "Every 1 min for 16 mins, alternating between:\n15/12 Bike Erg Calories\n4 Ring Push-ups"
+        },
+        {
+          "title": "Performance",
+          "description": "Every 1 min for 16 mins, alternating between:\n15/12 Bike Erg Calories\n4 Wall Walks"
+        }
+      ]
     },
     {
       "date": "2026-11-16",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "Strength Cycle - Deadlift",
+          "description": "Deadlift 1x10 at 15% 1RM\nDeadlift 1x8 at 50% 1RM\nDeadlift 1x5 at 60% 1RM\nDeadlift 1x3 at 83% 1RM\nDeadlift 1x3 at 88% 1RM\nDeadlift 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
+        },
+        {
+          "title": "\"Launch Pad\"",
+          "description": "For total rounds and reps:\nAMRAP in 2 mins of:\n3 Hang Power Cleans, 45/30 kg\n3 Burpee Box Jumps, 24/20 in\n-- then --\nRest 1 min\n-- then --\nAMRAP in 3 mins of:\n3 Hang Power Cleans, 45/30 kg\n3 Burpee Box Jumps, 24/20 in\n-- then --\nRest 1 min\n-- then --\nAMRAP in 4 mins of:\n3 Hang Power Cleans, 45/30 kg\n3 Burpee Box Jumps, 24/20 in\n\nFor each AMRAP, restart from 0."
+        }
+      ]
     },
     {
       "date": "2026-11-17",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "Strength Cycle - Jerk",
+          "description": "Push Press 1x10 at 15% 1RM\nPush Press 1x8 at 50% 1RM\nPush Press 1x5 at 60% 1RM\nPush Press 1x3 at 83% 1RM\nPush Press 1x3 at 88% 1RM\nPush Press 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
+        },
+        {
+          "title": "\"Positivity\"",
+          "description": "For time:\n5/4 Echo Bike Calories\n5 Dumbbell Bench Press, 22.5/15 kg\n10 Double Unders\n10/8 Echo Bike Calories\n10 Dumbbell Bench Press, 22.5/15 kg\n20 Double Unders\n15/12 Echo Bike Calories\n15 Dumbbell Bench Press, 22.5/15 kg\n30 Double Unders\n20/16 Echo Bike Calories\n20 Dumbbell Bench Press, 22.5/15 kg\n40 Double Unders\n25/20 Echo Bike Calories\n25 Dumbbell Bench Press, 22.5/15 kg\n50 Double Unders"
+        }
+      ]
     },
     {
       "date": "2026-11-18",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "Strength Cycle - Backsquat",
+          "description": "Back Squat 1x10 at 15% 1RM\nBack Squat 1x8 at 50% 1RM\nBack Squat 1x5 at 60% 1RM\nBack Squat 1x3 at 83% 1RM\nBack Squat 1x3 at 88% 1RM\nBack Squat 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
+        },
+        {
+          "title": "\"Deep End\"",
+          "description": "5 rounds for time of:\n12 Ski Erg Calories\n9 Front Squats, 40/30 kg\n6 Strict Pull-ups"
+        }
+      ]
     },
     {
       "date": "2026-11-19",
@@ -51,11 +144,21 @@
     },
     {
       "date": "2026-11-21",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "DUO WOD \"Ascent\"",
+          "description": "For time:\nRun (Together), 600 m\n25 Synchronized Air Squats\n25 Synchronized Single Arm Devil Press, 50/35 lbs\nRun (Together), 600 m\n20 Synchronized Air Squats\n20 Synchronized Single Arm Devil Press, 50/35 lbs\nRun (Together), 600 m\n15 Synchronized Air Squats\n15 Synchronized Single Arm Devil Press, 50/35 lbs\nRun (Together), 600 m\n10 Synchronized Air Squats\n10 Synchronized Single Arm Devil Press, 50/35 lbs\nRun (Together), 600 m\n5 Synchronized Air Squats\n5 Synchronized Single Arm Devil Press, 50/35 lbs\n\nTime cap: 35 mins"
+        }
+      ]
     },
     {
       "date": "2026-11-22",
-      "workouts": []
+      "workouts": [
+        {
+          "title": "\"Straight Four\"",
+          "description": "4 rounds, 4 mins each, for max reps of:\n30 Alternating Dumbbell Hang Snatches, 50/35 lbs\nmax reps in remaining time Row Calories\nRest 3 mins"
+        }
+      ]
     }
   ]
 }
