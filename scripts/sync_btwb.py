@@ -36,22 +36,18 @@ def parse_crossfit(html):
     if heading is None:
         return []
     workouts = []
-    for sibling in heading.next_siblings:
-        if getattr(sibling, "name", None) == "h3":
+    # Walk forward through DOM nodes; BTWB may nest rows in wrappers.
+    for row in heading.find_all_next(class_="todo-row"):
+        # Stop once the row belongs to a later program section.
+        previous_heading = row.find_previous("h3")
+        if previous_heading is not heading:
             break
-        if getattr(sibling, "name", None) == "hr":
-            break
-        if not getattr(sibling, "select", None):
+        desc = row.select_one(".workout-description")
+        if desc is None:
             continue
-        rows = ([sibling] if "todo-row" in sibling.get("class", []) else sibling.select(".todo-row"))
-        for row in rows:
-            # Exclude generic warmups and other instructions; include actual workout descriptions.
-            desc = row.select_one(".workout-description")
-            if desc is None:
-                continue
-            title_el = row.select_one(".event-title") or row.select_one(".event-workout a")
-            title = title_el.get_text(" ", strip=True) if title_el else "Workout"
-            workouts.append({"title": title[:180], "description": desc.get_text("\n", strip=True)[:5000]})
+        title_el = row.select_one(".event-title") or row.select_one(".event-workout a")
+        title = title_el.get_text(" ", strip=True) if title_el else "Workout"
+        workouts.append({"title": title[:180], "description": desc.get_text("\\n", strip=True)[:5000]})
     return workouts
 
 
@@ -89,7 +85,7 @@ def main():
                 raise RuntimeError("BTWB session was not authenticated")
             workouts = parse_crossfit(extract_html(content))
             days.append({"date": day.isoformat(), "workouts": workouts})
-        browser.close()
+        browser.close()\n    if not any(day["workouts"] for day in days):\n        raise RuntimeError("No CrossFit workouts found in 14 days; refusing to publish an empty sync")
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({"updated_at": datetime.now(ZoneInfo("Europe/Amsterdam")).isoformat(), "days": days}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"BTWB sync complete: {len(days)} days; {sum(len(d['workouts']) for d in days)} CrossFit workouts")
