@@ -1,0 +1,14 @@
+name: Test GitHub Actions
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Controleer GitHub Actions
+        run: echo "GitHub Actions werkt"
