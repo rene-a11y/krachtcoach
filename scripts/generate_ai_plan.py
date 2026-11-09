@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 
 INPUT = Path("data/wods.json")
 OUTPUT = Path("data/ai-plan.json")
-MODEL = "claude-sonnet-4-5-20250929"
+MODEL = "claude-sonnet-4-20250514"
 EXERCISES = {
     "Barbell bench press": ("🏋️", "Borst"),
     "Lat pulldown": ("↙️", "Brede rug"),
