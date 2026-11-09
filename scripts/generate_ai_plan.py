@@ -6,6 +6,7 @@ import json
 import os
 import re
 import urllib.request
+import urllib.error
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -93,8 +94,14 @@ def main():
         try:
             with urllib.request.urlopen(req, timeout=90) as response:
                 result = json.load(response)
+        except urllib.error.HTTPError as exc:
+            # Show only HTTP status and safe Anthropic error type, never credentials or request data.
+            try:
+                error_type = json.loads(exc.read().decode("utf-8")).get("error", {}).get("type", "unknown")
+            except (ValueError, UnicodeError):
+                error_type = "unknown"
+            raise RuntimeError(f"Anthropic API HTTP {exc.code}, error type: {error_type}") from None
         except Exception as exc:
-            # Never print request headers or API key.
             raise RuntimeError(f"Anthropic API request failed: {type(exc).__name__}") from None
         raw = "".join(part.get("text", "") for part in result.get("content", []) if part.get("type") == "text")
         raw = re.sub(r"^\x60\x60\x60(?:json)?\s*|\s*\x60\x60\x60$", "", raw.strip())
