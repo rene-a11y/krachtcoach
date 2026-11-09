@@ -6,11 +6,9 @@ on:
 permissions:
   contents: read
 
-
 jobs:
-  sync:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
-      - name: Diagnose BTWB-workflow
-        run: echo "BTWB-workflow start correct"
+      - name: Controleer BTWB-workflow
+        run: echo "GitHub Actions werkt"
