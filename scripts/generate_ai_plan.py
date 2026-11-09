@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 
 INPUT = Path("data/wods.json")
 OUTPUT = Path("data/ai-plan.json")
-MODEL = "claude-sonnet-4-20250514"
+PREFERRED_MODELS = ("claude-sonnet-4-6", "claude-sonnet-4-5", "claude-sonnet-4-20250514", "claude-3-7-sonnet-20250219")
 EXERCISES = {
     "Barbell bench press": ("🏋️", "Borst"),
     "Lat pulldown": ("↙️", "Brede rug"),
@@ -29,10 +29,36 @@ EXERCISES = {
     "Face pull": ("🪽", "Achterste schouder"),
 }
 
+def resolve_model(key):
+    """Ask Anthropic for models available to this API key instead of guessing IDs."""
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/models?limit=100",
+        headers={"x-api-key": key, "anthropic-version": "2023-06-01"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            models = json.load(response).get("data", [])
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError(f"Anthropic models listing HTTP {exc.code}") from None
+    ids = [m.get("id", "") for m in models if m.get("id")]
+    if not ids:
+        raise RuntimeError("Anthropic returned no available models")
+    for preferred in PREFERRED_MODELS:
+        if preferred in ids:
+            print(f"Selected available Anthropic model: {preferred}")
+            return preferred
+    sonnets = [m for m in ids if "sonnet" in m]
+    if sonnets:
+        chosen = sonnets[0]
+        print(f"Selected available Anthropic model: {chosen}")
+        return chosen
+    raise RuntimeError("No Claude Sonnet model available; available model IDs: " + ", ".join(ids[:20]))
+
 def main():
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not key:
         raise RuntimeError("Missing ANTHROPIC_API_KEY GitHub Actions secret")
+    model = resolve_model(key)
     data = json.loads(INPUT.read_text(encoding="utf-8"))
     today = datetime.now(ZoneInfo("Europe/Amsterdam")).date()
     monday = today - timedelta(days=today.weekday())
@@ -77,7 +103,7 @@ def main():
             "Only output the JSON object."
         )
         payload = json.dumps({
-            "model": MODEL, "max_tokens": 2300, "temperature": 0.2,
+            "model": model, "max_tokens": 2300, "temperature": 0.2,
             "system": instruction,
             "messages": [{"role": "user", "content": json.dumps(prompt, ensure_ascii=False)}],
         }).encode("utf-8")
@@ -129,7 +155,7 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({
         "generated_at": datetime.now(ZoneInfo("Europe/Amsterdam")).isoformat(),
-        "model": MODEL, "weeks": all_plans,
+        "model": model, "weeks": all_plans,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Generated {len(all_plans)} weekly gym plans with Claude")
 
