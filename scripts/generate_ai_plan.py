@@ -75,10 +75,15 @@ def main():
         ]
         if not selected or not any(d["workouts"] for d in selected):
             continue
+        friday = next((d for d in selected if date.fromisoformat(d["date"]).weekday() == 4), None)
+        friday_available = bool(friday and friday["workouts"])
+        friday_titles = [w["title"] for w in friday["workouts"]] if friday_available else []
         prompt = {
             "week_start": start.isoformat(),
             "week_end": end.isoformat(),
             "wods": selected,
+            "friday_wod_available": friday_available,
+            "friday_wod_titles": friday_titles,
             "available_exercises": list(EXERCISES),
             "goal": "Upper body hypertrophy (chest, back width/thickness, shoulders, arms)",
             "schedule": "Gym Monday (A), CrossFit Tuesday, Gym Thursday (B), CrossFit Friday, running on weekend",
@@ -93,6 +98,9 @@ def main():
             "alternatives. If Friday WOD is missing, say uncertainty explicitly and keep Thursday "
             "conservative. Never invent WOD content. No max-effort sets or pain-provoking movements. "
             "Use 2-3 reps in reserve and include sensible progression cues. "
+            "CRITICAL: friday_wod_available is an authoritative boolean. If true, NEVER say the Friday WOD "
+            "is missing, unpublished, unknown or unavailable. Refer explicitly to the provided Friday "
+            "WOD exercise demands when explaining Thursday programming. If false, do not invent it. "
             "Choose ONLY exercise names from available_exercises. "
             "Return ONLY valid JSON, no markdown, in this exact shape: "
             '{"A":{"summary":"Dutch 1-3 sentences","exercises":[{"name":"exercise from list",'
@@ -149,6 +157,17 @@ def main():
                 if not isinstance(ex.get("note"), str):
                     raise RuntimeError("Claude returned missing exercise note")
                 ex["icon"], ex["focus"] = EXERCISES[ex["name"]]
+        if friday_available:
+            # Prevent a fabricated missing-WOD claim even when the model ignores its context.
+            summary = plan["B"]["summary"]
+            if re.search(r"(vrijdag.{0,55}(niet beschikbaar|ontbreek|niet gepubliceerd|onbekend)|(?:niet beschikbaar|ontbreek|niet gepubliceerd|onbekend).{0,55}vrijdag)", summary, re.I):
+                plan["B"]["summary"] = (
+                    "Vrijdag staat de CrossFit-WOD " + ", ".join(friday_titles) +
+                    " gepland. Donderdag wordt het trainingsvolume afgestemd op de daarbij "
+                    "genoemde oefeningen, met extra aandacht voor herstel van rug, grip en schouders. "
+                    "Houd 2-3 herhalingen in reserve."
+                )
+                print(f"Corrected false missing-Friday-WOD claim for week {start}")
         all_plans.append({"week_start": start.isoformat(), "week_end": end.isoformat(), "A": plan["A"], "B": plan["B"]})
     if not all_plans:
         raise RuntimeError("No upcoming Tuesday/Friday WODs available for AI planning")
