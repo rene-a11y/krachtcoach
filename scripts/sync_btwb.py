@@ -85,7 +85,9 @@ def main():
                 raise RuntimeError("BTWB session was not authenticated")
             workouts = parse_crossfit(extract_html(content))
             days.append({"date": day.isoformat(), "workouts": workouts})
-        browser.close()\n    if not any(day["workouts"] for day in days):\n        raise RuntimeError("No CrossFit workouts found in 14 days; refusing to publish an empty sync")
+        browser.close()
+    if not any(day["workouts"] for day in days):
+        raise RuntimeError("No CrossFit workouts found in 14 days; refusing to publish an empty sync")
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({"updated_at": datetime.now(ZoneInfo("Europe/Amsterdam")).isoformat(), "days": days}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"BTWB sync complete: {len(days)} days; {sum(len(d['workouts']) for d in days)} CrossFit workouts")
