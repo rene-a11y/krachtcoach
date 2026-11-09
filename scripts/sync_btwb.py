@@ -34,6 +34,7 @@ def parse_crossfit(html):
         raise RuntimeError("BTWB whiteboard panel not found")
     heading = next((h for h in panel.find_all("h3") if h.get_text(" ", strip=True).lower() == "crossfit"), None)
     if heading is None:
+        print(f"BTWB parser: CrossFit heading missing; headings={[h.get_text(' ', strip=True)[:50] for h in panel.find_all('h3')][:15]}")
         return []
     workouts = []
     # Walk forward through DOM nodes; BTWB may nest rows in wrappers.
@@ -48,6 +49,7 @@ def parse_crossfit(html):
         title_el = row.select_one(".event-title") or row.select_one(".event-workout a")
         title = title_el.get_text(" ", strip=True) if title_el else "Workout"
         workouts.append({"title": title[:180], "description": desc.get_text("\\n", strip=True)[:5000]})
+    print(f"BTWB parser: CrossFit heading found; rows={len(heading.find_all_next(class_='todo-row'))}; matched={len(workouts)}")
     return workouts
 
 
@@ -83,7 +85,12 @@ def main():
             content = response.text()
             if "<html" in content[:500].lower() and ("sign in" in content.lower() or "log in" in content.lower()):
                 raise RuntimeError("BTWB session was not authenticated")
-            workouts = parse_crossfit(extract_html(content))
+            html = extract_html(content)
+            if offset == 0:
+                soup = BeautifulSoup(html, "html.parser")
+                print(f"BTWB response: HTTP={response.status}; html_length={len(html)}; panels={len(soup.select('#whiteboard-wods-panel'))}; todo_rows={len(soup.select('.todo-row'))}; headings={[x.get_text(' ', strip=True)[:40] for x in soup.find_all('h3')][:15]}")
+            workouts = parse_crossfit(html)
+            print(f"BTWB day {day.isoformat()}: {len(workouts)} CrossFit workouts")
             days.append({"date": day.isoformat(), "workouts": workouts})
         browser.close()
     if not any(day["workouts"] for day in days):
