@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-09T20:54:10.058839+01:00",
+  "generated_at": "2026-11-10T13:47:58.749215+01:00",
   "model": "claude-sonnet-4-6",
   "weeks": [
     {
       "week_start": "2026-11-09",
       "week_end": "2026-11-15",
       "A": {
-        "summary": "Maandagtraining gericht op borstontwikkeling, rugbreedte en schouders. Dinsdag staat een zware Jerk-cyclus en Push Press AMRAP gepland, dus we houden de schouderbelasting vandaag beheersbaar en vermijden uitputting van de drukspieren.",
+        "summary": "Matige bovenlij sessie met 3-4 herhalingen in reserve om dinsdag (Jerk-cyclus + Push Press AMRAP) fris aan te gaan. Schouders en triceps worden bewust gespaard; focus ligt op brede, gecontroleerde bewegingen met voldoende herstelruimte.",
         "exercises": [
           {
             "name": "Barbell bench press",
-            "sets": 4,
+            "sets": 3,
             "reps": "8-10",
-            "note": "Houd 2-3 herhalingen in reserve; focus op gecontroleerde excentrische fase van 2-3 seconden.",
+            "note": "Rustig tempo (3-1-1), stop ruim voor falen – schouders moeten dinsdag fris zijn",
             "icon": "🏋️",
             "focus": "Borst"
           },
@@ -20,92 +20,92 @@
             "name": "Lat pulldown",
             "sets": 3,
             "reps": "10-12",
-            "note": "Trek de stang naar de borst en knijp de schouderbladen samen onderaan; vermijd zwaaien.",
+            "note": "Volle bewegingsuitslag, focus op lat-activatie; geen krachtsprint",
             "icon": "↙️",
             "focus": "Brede rug"
+          },
+          {
+            "name": "Chest-supported dumbbell row",
+            "sets": 3,
+            "reps": "10-12",
+            "note": "Borst op bank voor stabiele rugpositie; ellebogen laag houden",
+            "icon": "🚣",
+            "focus": "Rugdikte"
           },
           {
             "name": "Incline dumbbell press",
             "sets": 3,
             "reps": "10-12",
-            "note": "Lichte tot matige belasting; schouders mogen dinsdag niet al te vermoeid zijn door de Push Press.",
+            "note": "Lichte tot matige belasting, bovenkant borst; stop bij 3-4 reps in reserve",
             "icon": "💪",
             "focus": "Bovenborst"
           },
           {
-            "name": "Chest-supported dumbbell row",
-            "sets": 3,
-            "reps": "10-12",
-            "note": "Borst op de bank voor stabiele positie; focus op elleboog naar achteren trekken, niet op gewicht.",
-            "icon": "🚣",
-            "focus": "Rugdikte"
-          },
-          {
             "name": "Dumbbell lateral raise",
-            "sets": 3,
+            "sets": 2,
             "reps": "12-15",
-            "note": "Licht gewicht, langzaam en gecontroleerd; stop bij schouderhoogte om overbelasting te vermijden.",
+            "note": "Licht gewicht, gecontroleerd – schouders niet uitputten voor dinsdag",
             "icon": "🙆",
             "focus": "Zijkant schouders"
           },
           {
-            "name": "Biceps curl",
-            "sets": 3,
-            "reps": "10-12",
-            "note": "Volle bewegingsuitslag; wissel volgende week naar Hammer curl voor variatie.",
-            "icon": "💪",
-            "focus": "Biceps"
-          },
-          {
-            "name": "Cable triceps pushdown",
-            "sets": 3,
-            "reps": "12-15",
-            "note": "Ellebogen gefixeerd naast het lichaam; squeeze onderaan voor maximale activatie.",
-            "icon": "💪",
-            "focus": "Triceps"
+            "name": "Face pull",
+            "sets": 2,
+            "reps": "15",
+            "note": "Externe rotatie benadrukken; herstelgericht voor rotator cuff",
+            "icon": "🪽",
+            "focus": "Achterste schouder"
           }
         ]
       },
       "B": {
-        "summary": "Donderdagtraining is bewust conservatief gehouden omdat de vrijdag-TEAMWOD zware eisen stelt aan de rug en schouders via Chest-to-bar Pull-ups of Muscle-ups en Power Cleans. We richten ons op rugdikte, rear delts en armen met lagere volumes en sets zodat je vrijdag fris aan de start staat.",
+        "summary": "Primaire hypertrofiesessie gericht op 2-3 reps in reserve. Dinsdag bestond uit zware jerks en een Push Press AMRAP, waardoor schouders en triceps al belast zijn – deze worden vandaag indirect aangesproken maar niet als prioriteit. Vrijdag staat een zware teamwod gepland met Chest-to-bar Pull-ups (of Muscle-ups), Power Cleans en Burpee Box Jumps, dus rug-breedte en biceps worden matig gehouden om pulling-kracht vrijdag te bewaren.",
         "exercises": [
           {
-            "name": "Cable row",
-            "sets": 3,
-            "reps": "10-12",
-            "note": "Matige belasting; de vrijdag-WOD bevat veel trekwerk (C2B/Muscle-ups), dus bewaar energie voor morgen.",
-            "icon": "🚣",
-            "focus": "Rug"
+            "name": "Barbell bench press",
+            "sets": 4,
+            "reps": "8-10",
+            "note": "Hoofdbeweging borst; dinsdag-schouders zijn hersteld genoeg – focus op borst, niet op stoten",
+            "icon": "🏋️",
+            "focus": "Borst"
           },
           {
             "name": "Pec deck",
-            "sets": 2,
+            "sets": 3,
             "reps": "12-15",
-            "note": "Geïsoleerde borstactivatie zonder schouderstress; ideaal als aanvulling na de zware maandag.",
+            "note": "Isolatie voor borst; gecontroleerde stretch en squeeze, geen momentum",
             "icon": "💪",
             "focus": "Borst"
           },
           {
-            "name": "Chest-supported dumbbell row",
+            "name": "Cable row",
             "sets": 3,
             "reps": "10-12",
-            "note": "Rugdikte zonder axiale belasting; houd gewicht lager dan maandag vanwege de Power Cleans morgen.",
+            "note": "Rugdikte; matig gewicht – vrijdag veel pulling (C2B/muscle-ups), dus niet tot falen",
             "icon": "🚣",
-            "focus": "Rugdikte"
+            "focus": "Rug"
           },
           {
-            "name": "Face pull",
+            "name": "Lat pulldown",
             "sets": 3,
-            "reps": "15-20",
-            "note": "Essentieel voor rear delt en rotatorenmanchet; licht gewicht, hoge kwaliteit, beschermt de schouders voor de WOD.",
+            "reps": "10-12",
+            "note": "Rugbreedte; bewust conservatief volume om lat-herstel voor vrijdag te garanderen",
+            "icon": "↙️",
+            "focus": "Brede rug"
+          },
+          {
+            "name": "Reverse fly",
+            "sets": 3,
+            "reps": "12-15",
+            "note": "Achterste deltoid en rhomboïden; licht gewicht, hoge kwaliteit",
             "icon": "🪽",
             "focus": "Achterste schouder"
           },
           {
             "name": "Hammer curl",
-            "sets": 2,
+            "sets": 3,
             "reps": "10-12",
-            "note": "Traint brachialis en onderarm; minder vermoeiend dan barbell curl en goed te combineren met trekwerk.",
+            "note": "Brachialis en brachioradialis; vrijdag veel pulling dus stop bij 2-3 reps in reserve",
             "icon": "💪",
             "focus": "Biceps"
           },
@@ -113,7 +113,7 @@
             "name": "Cable triceps pushdown",
             "sets": 2,
             "reps": "12-15",
-            "note": "Afsluitende isolatie; houd intensiteit laag zodat ellebogen fris blijven voor de WOD van morgen.",
+            "note": "Licht afwerken na zware dinsdag-schouderbelasting; herstelgericht volume",
             "icon": "💪",
             "focus": "Triceps"
           }
@@ -124,37 +124,29 @@
       "week_start": "2026-11-16",
       "week_end": "2026-11-22",
       "A": {
-        "summary": "Maandag richten we ons op borstontwikkeling, rugbreedte en schouderstabiliteit. Dinsdag volgt een zware push press- en benchpress-sessie bij CrossFit, dus houden we de intensiteit vandaag beheersbaar met 2-3 herhalingen in reserve. Progressie: verhoog het gewicht met 2,5 kg zodra je de bovenste herhalingsgrens comfortabel haalt over twee opeenvolgende sessies.",
+        "summary": "Matige bovenllichaamssessie als voorbereiding op de CrossFit van dinsdag. Focus op gecontroleerde uitvoering met 3-4 herhalingen in reserve; vermijd spierpijn en overmatige vermoeidheid in de borst- en schouderregio zodat de push press en dumbbell bench press van dinsdag optimaal uitgevoerd kunnen worden.",
         "exercises": [
-          {
-            "name": "Barbell bench press",
-            "sets": 4,
-            "reps": "8-10",
-            "note": "Rustige excentrische fase (~2 sec), stop 2-3 reps voor falen – dinsdag volgt er nog veel benchpress.",
-            "icon": "🏋️",
-            "focus": "Borst"
-          },
           {
             "name": "Lat pulldown",
             "sets": 3,
             "reps": "10-12",
-            "note": "Trek de stang naar de bovenkant van de borst, houd de schouderbladen laag en samen.",
+            "note": "Rustig tempo, trek de stang naar de borst en houd 1 seconde vast. Ruim in reserve houden.",
             "icon": "↙️",
             "focus": "Brede rug"
           },
           {
-            "name": "Incline dumbbell press",
+            "name": "Barbell bench press",
             "sets": 3,
             "reps": "10-12",
-            "note": "Lichte hoek (30°), focus op de bovenste borst; geen lockout om spanning te behouden.",
-            "icon": "💪",
-            "focus": "Bovenborst"
+            "note": "Licht tot matig gewicht, 3-4 reps in reserve. Geen maximale inspanning — borst spaart voor dinsdag.",
+            "icon": "🏋️",
+            "focus": "Borst"
           },
           {
             "name": "Chest-supported dumbbell row",
             "sets": 3,
             "reps": "10-12",
-            "note": "Elleboog hoog trekken, korte pauze bovenaan voor maximale spieractivatie.",
+            "note": "Borst op de bank voor stabiele uitvoering. Ellebogen langs het lichaam, focus op rugdikte.",
             "icon": "🚣",
             "focus": "Rugdikte"
           },
@@ -162,7 +154,7 @@
             "name": "Dumbbell lateral raise",
             "sets": 3,
             "reps": "12-15",
-            "note": "Licht gewicht, gecontroleerde beweging; stop bij schouderhoogte om impingement te vermijden.",
+            "note": "Licht gewicht, gecontroleerde beweging. Schouders niet overbelasten voor de push press van dinsdag.",
             "icon": "🙆",
             "focus": "Zijkant schouders"
           },
@@ -170,7 +162,7 @@
             "name": "Face pull",
             "sets": 3,
             "reps": "15",
-            "note": "Hoge kabelstand, trek naar het gezicht met externe rotatie – goed voor schoudergezondheid.",
+            "note": "Hoge kabel, trek naar het gezicht met externe rotatie. Goed voor schoudergezondheid en houding.",
             "icon": "🪽",
             "focus": "Achterste schouder"
           },
@@ -178,60 +170,60 @@
             "name": "Hammer curl",
             "sets": 2,
             "reps": "12",
-            "note": "Neutrale greep, geen slingeren; werkt zowel biceps als brachialis.",
+            "note": "Neutrale grip, beide armen tegelijk of afwisselend. Rustig neerlaten voor maximale prikkel.",
             "icon": "💪",
             "focus": "Biceps"
           }
         ]
       },
       "B": {
-        "summary": "Vrijdag is de CrossFit-WOD onbekend, dus houden we donderdag bewust conservatief: minder sets, geen zware drukbewegingen en de nadruk op trekspieren en armen. Zo minimaliseren we vermoeidheid richting het weekend zonder hypertrofiewinst te missen. Progressie: noteer gewichten en verhoog zodra alle sets vlot gaan met 2-3 reps in reserve.",
+        "summary": "Primaire hypertrofiesessie op woensdag. De dinsdag-WOD bevatte zware push press (tot 93% 1RM) en een metcon met dumbbell bench press, waardoor de horizontale duwspieren en schouders vermoeid zijn. De sessie verschuift daarom de nadruk naar trekbewegingen en armen, met beperkt volume op horizontaal duwen. Omdat de vrijdag-WOD niet beschikbaar is, wordt de sessie conservatief gehouden om voldoende herstel te garanderen voor CrossFit vrijdag.",
         "exercises": [
           {
-            "name": "Cable row",
-            "sets": 3,
-            "reps": "10-12",
-            "note": "Zit rechtop, trek de handgreep naar de navel en knijp de schouderbladen samen.",
-            "icon": "🚣",
-            "focus": "Rug"
-          },
-          {
             "name": "Lat pulldown",
-            "sets": 3,
+            "sets": 4,
             "reps": "10-12",
-            "note": "Brede greep, focus op rugbreedte; vermijd naar achteren leunen.",
+            "note": "Primaire oefening voor rugbreedte. Volledig strekken bovenaan, gecontroleerd neertrekken. 2-3 reps in reserve.",
             "icon": "↙️",
             "focus": "Brede rug"
           },
           {
-            "name": "Pec deck",
-            "sets": 2,
-            "reps": "12-15",
-            "note": "Machine-isolatie is schoudervriendelijk; houd een lichte boog in de ellebogen.",
+            "name": "Cable row",
+            "sets": 4,
+            "reps": "10-12",
+            "note": "Focus op rugdikte. Houd de romp stabiel en trek de ellebogen ver naar achteren. Gecontroleerd terug.",
+            "icon": "🚣",
+            "focus": "Rug"
+          },
+          {
+            "name": "Incline dumbbell press",
+            "sets": 3,
+            "reps": "10-12",
+            "note": "Schuine bank vermindert belasting op de platte borstspier die gisteren al zwaar belast werd. Matig gewicht, 2-3 reps in reserve.",
             "icon": "💪",
-            "focus": "Borst"
+            "focus": "Bovenborst"
           },
           {
             "name": "Reverse fly",
-            "sets": 2,
-            "reps": "15",
-            "note": "Licht gewicht, langzame beweging; traint de achterste deltoid en helpt houdingsbalans.",
+            "sets": 3,
+            "reps": "12-15",
+            "note": "Licht gewicht, focus op achterste deltaspier en rhomboïden. Langzaam neerlaten voor extra prikkel.",
             "icon": "🪽",
             "focus": "Achterste schouder"
           },
           {
             "name": "Biceps curl",
-            "sets": 2,
-            "reps": "12",
-            "note": "Volledige bewegingsuitslag, geen slingeren; wissel naar dumbbell als de stang oncomfortabel voelt.",
+            "sets": 3,
+            "reps": "10-12",
+            "note": "Supinerende greep, volledige bewegingsuitslag. Armen waren weinig belast dinsdag, dus hier iets meer volume.",
             "icon": "💪",
             "focus": "Biceps"
           },
           {
             "name": "Cable triceps pushdown",
-            "sets": 2,
-            "reps": "12-15",
-            "note": "Ellebogen gefixeerd naast het lichaam, volledig strekken zonder de schouders te bewegen.",
+            "sets": 3,
+            "reps": "12",
+            "note": "Touw of rechte stang. Ellebogen gefixeerd langs het lichaam. Triceps waren actief bij push press, dus matig gewicht.",
             "icon": "💪",
             "focus": "Triceps"
           },
@@ -239,7 +231,7 @@
             "name": "Face pull",
             "sets": 2,
             "reps": "15",
-            "note": "Lage belasting, hoge herhaling – ondersteunt schouderherstel richting vrijdag.",
+            "note": "Herstelondersteunend voor de schouders na de zware duwbelasting van dinsdag. Licht gewicht, hoge herhaling.",
             "icon": "🪽",
             "focus": "Achterste schouder"
           }

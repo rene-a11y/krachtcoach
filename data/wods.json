@@ -1,23 +1,6 @@
 {
-  "updated_at": "2026-11-09T20:53:25.753875+01:00",
+  "updated_at": "2026-11-10T13:47:13.877780+01:00",
   "days": [
-    {
-      "date": "2026-11-09",
-      "workouts": [
-        {
-          "title": "Strength Cycle - Deadlift",
-          "description": "Deadlift 1x10 at 15% 1RM\nDeadlift 1x8 at 50% 1RM\nDeadlift 1x5 at 60% 1RM\nDeadlift 1x5 at 80% 1RM\nDeadlift 1x3 at 83% 1RM\nDeadlift 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
-        },
-        {
-          "title": "\"Anchor Point\"",
-          "description": "For time:\n3 rounds of:\n12 V-ups\n6 Strict Pull-ups\n6 Deadlifts, 100/70 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n10 V-ups\n5 Strict Pull-ups\n5 Deadlifts, 115/80 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n8 V-ups\n4 Strict Pull-ups\n4 Deadlifts, 125/85 kg"
-        },
-        {
-          "title": "Performance",
-          "description": "For time:\n3 rounds of:\n12 GHD Sit-ups\n6 Strict Pull-ups\n6 Deadlifts, 110/80 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n10 GHD Sit-ups\n5 Strict Pull-ups\n5 Deadlifts, 120/90 kg\n-- then --\nRest 1 min\n-- then --\n3 rounds of:\n8 GHD Sit-ups\n4 Strict Pull-ups\n4 Deadlifts, 130/105 kg"
-        }
-      ]
-    },
     {
       "date": "2026-11-10",
       "workouts": [
@@ -32,6 +15,14 @@
         {
           "title": "BTWB Meetwaarde - 1600m run",
           "description": "Run 1600 m\n\nThis is an all out effort for time."
+        },
+        {
+          "title": "Run 1000 m TT",
+          "description": "Run 1000 m\n\nThis is an all out effort for time."
+        },
+        {
+          "title": "Performance",
+          "description": "Complete as many rounds as possible in 7 mins of:\n7 Push Press, 60/43 kg\n7 Lateral Burpee Over Bars"
         }
       ]
     },
@@ -40,7 +31,7 @@
       "workouts": [
         {
           "title": "Strength Cycle - Backsquat",
-          "description": "Back Squat 1x10 at 15% 1RM\nBack Squat 1x8 at 50% 1RM\nBack Squat 1x5 at 60% 1RM\nBack Squat 1x5 at 80% 1RM\nBack Squat 1x3 at 83% 1RM\nBack Squat 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
+          "description": "Back Squat 1x10 at 15% 1RM\nBack Squat 1x8 at 55% 1RM\nBack Squat 1x5 at 70% 1RM\nBack Squat 1x5 at 80% 1RM\nBack Squat 1x3 at 83% 1RM\nBack Squat 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
         },
         {
           "title": "\"Three-Piece\"",
@@ -100,7 +91,7 @@
       "workouts": [
         {
           "title": "Strength Cycle - Deadlift",
-          "description": "Deadlift 1x10 at 15% 1RM\nDeadlift 1x8 at 50% 1RM\nDeadlift 1x5 at 60% 1RM\nDeadlift 1x3 at 83% 1RM\nDeadlift 1x3 at 88% 1RM\nDeadlift 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
+          "description": "Deadlift 1x10 at 15% 1RM\nDeadlift 1x8 at 55% 1RM\nDeadlift 1x5 at 70% 1RM\nDeadlift 1x3 at 83% 1RM\nDeadlift 1x3 at 88% 1RM\nDeadlift 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
         },
         {
           "title": "\"Launch Pad\"",
@@ -113,7 +104,7 @@
       "workouts": [
         {
           "title": "Strength Cycle - Jerk",
-          "description": "Push Press 1x10 at 15% 1RM\nPush Press 1x8 at 50% 1RM\nPush Press 1x5 at 60% 1RM\nPush Press 1x3 at 83% 1RM\nPush Press 1x3 at 88% 1RM\nPush Press 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
+          "description": "Push Press 1x10 at 15% 1RM\nPush Press 1x8 at 55% 1RM\nPush Press 1x5 at 70% 1RM\nPush Press 1x3 at 83% 1RM\nPush Press 1x3 at 88% 1RM\nPush Press 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
         },
         {
           "title": "\"Positivity\"",
@@ -126,7 +117,7 @@
       "workouts": [
         {
           "title": "Strength Cycle - Backsquat",
-          "description": "Back Squat 1x10 at 15% 1RM\nBack Squat 1x8 at 50% 1RM\nBack Squat 1x5 at 60% 1RM\nBack Squat 1x3 at 83% 1RM\nBack Squat 1x3 at 88% 1RM\nBack Squat 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
+          "description": "Back Squat 1x10 at 15% 1RM\nBack Squat 1x8 at 55% 1RM\nBack Squat 1x5 at 70% 1RM\nBack Squat 1x3 at 83% 1RM\nBack Squat 1x3 at 88% 1RM\nBack Squat 1x1+ at 93% 1RM\n\nRest 3 mins between sets."
         },
         {
           "title": "\"Deep End\"",
@@ -157,6 +148,23 @@
         {
           "title": "\"Straight Four\"",
           "description": "4 rounds, 4 mins each, for max reps of:\n30 Alternating Dumbbell Hang Snatches, 50/35 lbs\nmax reps in remaining time Row Calories\nRest 3 mins"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "workouts": [
+        {
+          "title": "Strength cycle - back off week",
+          "description": "Sumo Deadlift 3-3-3-3-3\n\nUse the heaviest weight you can for each set.\nRest as needed between sets."
+        },
+        {
+          "title": "\"Hop To It\"",
+          "description": "4 rounds for time of:\n15 Hang Power Cleans, 45/30 kg\n15 Lateral Burpees\n15 Thrusters, 45/30 kg\n15 Lateral Burpees\nRest 1 min"
+        },
+        {
+          "title": "Performance",
+          "description": "4 rounds for time of:\n15 Hang Power Cleans, 60/40 kg\n15 Lateral Burpees\n15 Thrusters, 60/40 kg\n15 Lateral Burpees\nRest 1 min"
         }
       ]
     }
