@@ -86,7 +86,7 @@ def main():
             "friday_wod_titles": friday_titles,
             "available_exercises": list(EXERCISES),
             "goal": "Upper body hypertrophy (chest, back width/thickness, shoulders, arms)",
-            "schedule": "Gym Monday (A), CrossFit Tuesday, Gym Thursday (B), CrossFit Friday, running on weekend",
+            "schedule": "Gym Monday (A, moderate upper-body session with 3-4 reps in reserve to protect Tuesday CrossFit), CrossFit Tuesday, Gym Wednesday (B, primary hypertrophy session adjusted to Tuesday and Friday WODs), rest Thursday, CrossFit Friday, running on weekend",
             "session_minutes": "45-60",
             "training_level": "CrossFit beginner, recreational running, progressive resistance training",
         }
@@ -95,12 +95,12 @@ def main():
             "for the specified week, prioritizing hypertrophy while managing fatigue around the "
             "actual Tuesday and Friday CrossFit WODs. Consider that published BTWB workouts may "
             "include alternatives for different levels: do not assume the athlete performs all "
-            "alternatives. If Friday WOD is missing, say uncertainty explicitly and keep Thursday "
+            "alternatives. If Friday WOD is missing, say uncertainty explicitly and keep Wednesday "
             "conservative. Never invent WOD content. No max-effort sets or pain-provoking movements. "
-            "Use 2-3 reps in reserve and include sensible progression cues. "
+            "On Monday use 3-4 reps in reserve and avoid excessive fatigue before Tuesday CrossFit. On Wednesday prioritize hypertrophy with 2-3 reps in reserve, adapting to Tuesday's WOD and preserving Friday CrossFit performance. Include sensible progression cues. "
             "CRITICAL: friday_wod_available is an authoritative boolean. If true, NEVER say the Friday WOD "
             "is missing, unpublished, unknown or unavailable. Refer explicitly to the provided Friday "
-            "WOD exercise demands when explaining Thursday programming. If false, do not invent it. "
+            "WOD exercise demands when explaining Wednesday programming. If false, do not invent it. "
             "Choose ONLY exercise names from available_exercises. "
             "Return ONLY valid JSON, no markdown, in this exact shape: "
             '{"A":{"summary":"Dutch 1-3 sentences","exercises":[{"name":"exercise from list",'
@@ -163,7 +163,7 @@ def main():
             if re.search(r"(vrijdag.{0,55}(niet beschikbaar|ontbreek|niet gepubliceerd|onbekend)|(?:niet beschikbaar|ontbreek|niet gepubliceerd|onbekend).{0,55}vrijdag)", summary, re.I):
                 plan["B"]["summary"] = (
                     "Vrijdag staat de CrossFit-WOD " + ", ".join(friday_titles) +
-                    " gepland. Donderdag wordt het trainingsvolume afgestemd op de daarbij "
+                    " gepland. Woensdag wordt het trainingsvolume afgestemd op de daarbij "
                     "genoemde oefeningen, met extra aandacht voor herstel van rug, grip en schouders. "
                     "Houd 2-3 herhalingen in reserve."
                 )
