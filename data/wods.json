@@ -1,48 +1,6 @@
 {
-  "updated_at": "2026-11-10T13:47:13.877780+01:00",
+  "updated_at": "2026-11-12T13:47:05.395710+01:00",
   "days": [
-    {
-      "date": "2026-11-10",
-      "workouts": [
-        {
-          "title": "Strength Cycle - Jerk",
-          "description": "Jerk 1x10 at 15% 1RM\nJerk 1x8 at 50% 1RM\nJerk 1x5 at 60% 1RM\nJerk 1x5 at 80% 1RM\nJerk 1x3 at 83% 1RM\nJerk 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
-        },
-        {
-          "title": "\"Fuse\"",
-          "description": "Complete as many rounds as possible in 7 mins of:\n7 Push Press, 50/35 kg\n7 Lateral Burpee Over Bars"
-        },
-        {
-          "title": "BTWB Meetwaarde - 1600m run",
-          "description": "Run 1600 m\n\nThis is an all out effort for time."
-        },
-        {
-          "title": "Run 1000 m TT",
-          "description": "Run 1000 m\n\nThis is an all out effort for time."
-        },
-        {
-          "title": "Performance",
-          "description": "Complete as many rounds as possible in 7 mins of:\n7 Push Press, 60/43 kg\n7 Lateral Burpee Over Bars"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-11",
-      "workouts": [
-        {
-          "title": "Strength Cycle - Backsquat",
-          "description": "Back Squat 1x10 at 15% 1RM\nBack Squat 1x8 at 55% 1RM\nBack Squat 1x5 at 70% 1RM\nBack Squat 1x5 at 80% 1RM\nBack Squat 1x3 at 83% 1RM\nBack Squat 1x3+ at 90% 1RM\n\nRest 3 mins between sets."
-        },
-        {
-          "title": "\"Three-Piece\"",
-          "description": "4 rounds for time of:\n20/16 Echo Bikes\n20 Kettlebell Goblet Squats, 24/16 kg\n60 Double Unders"
-        },
-        {
-          "title": "Performance",
-          "description": "4 rounds for time of:\n20/16 Echo Bikes\n20 Kettlebell Goblet Squats, 32/24 kg\n100 Double Unders"
-        }
-      ]
-    },
     {
       "date": "2026-11-12",
       "workouts": []
@@ -52,11 +10,11 @@
       "workouts": [
         {
           "title": "TEAMWOD",
-          "description": "For time:\n9 rounds of:\n3 Burpee Box Jumps, 24/20 in\n6 Chest-to-bar Pull-ups\n9 Power Cleans, 40/30 kg\nRow, 1200 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Chest-to-bar Pull-ups\n12 Power Cleans, 40/30 kg\nRow, 2400 m\n-- then --\nRest 3 mins\n-- then --\n6 Burpee Box Jumps, 24/20 in\n12 Chest-to-bar Pull-ups\n15 Power Cleans, 40/30 kg\nRow, 3000 m"
+          "description": "For time:\n9 rounds of:\n3 Burpee Box Jumps, 24/20 in\n6 Chest-to-bar Pull-ups\n9 Power Cleans, 40/30 kg\nRow, 1200 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Chest-to-bar Pull-ups\n12 Power Cleans, 40/30 kg\nRow, 2400 m\n-- then --\nRest 3 mins\n-- then --\n3 rounds of:\n6 Burpee Box Jumps, 24/20 in\n12 Chest-to-bar Pull-ups\n15 Power Cleans, 40/30 kg\nRow, 3000 m"
         },
         {
           "title": "TEAMWOD - Performance",
-          "description": "For time:\n9 rounds of:\n2 Burpee Box Jumps, 24/20 in\n6 Muscle-ups\n9 Power Cleans, 40/30 kg\nRow, 1200/900 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Muscle-ups\n12 Power Cleans, 40/30 kg\nRow, 1500/1200 m\n-- then --\nRest 3 mins\n-- then --\n6 Burpee Box Jumps, 24/20 in\n12 Muscle-ups\n15 Power Cleans, 40/30 kg\nRow, 1800/1500 m"
+          "description": "For time:\n9 rounds of:\n2 Burpee Box Jumps, 24/20 in\n6 Muscle-ups\n9 Power Cleans, 40/30 kg\nRow, 1200/900 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Muscle-ups\n12 Power Cleans, 40/30 kg\nRow, 1500/1200 m\n-- then --\nRest 3 mins\n-- then --\n3 rounds of:\n6 Burpee Box Jumps, 24/20 in\n12 Muscle-ups\n15 Power Cleans, 40/30 kg\nRow, 1800/1500 m"
         }
       ]
     },
@@ -165,6 +123,40 @@
         {
           "title": "Performance",
           "description": "4 rounds for time of:\n15 Hang Power Cleans, 60/40 kg\n15 Lateral Burpees\n15 Thrusters, 60/40 kg\n15 Lateral Burpees\nRest 1 min"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "workouts": [
+        {
+          "title": "Strength cycle - back off week",
+          "description": "Push Press 3-3-3-3-3\n\nUse the heaviest weight you can for each set.\nRest as needed between sets."
+        },
+        {
+          "title": "\"Heavy freight\"",
+          "description": "For time:\n10 Dumbbell Snatches, 22.5/15 kg\n10 Ring Dips\n10 Ring Rows\n10/8 Echo Bikes\n9 Dumbbell Snatches, 22.5/15 kg\n9 Ring Dips\n9 Ring Rows\n10/8 Echo Bikes\n8 Dumbbell Snatches, 22.5/15 kg\n8 Ring Dips\n8 Ring Rows\n10/8 Echo Bikes\n7 Dumbbell Snatches, 22.5/15 kg\n7 Ring Dips\n7 Ring Rows\n10/8 Echo Bikes\n6 Dumbbell Snatches, 22.5/15 kg\n6 Ring Dips\n6 Ring Rows\n10/8 Echo Bikes\n5 Dumbbell Snatches, 22.5/15 kg\n5 Ring Dips\n5 Ring Rows\n10/8 Echo Bikes\n4 Dumbbell Snatches, 22.5/15 kg\n4 Ring Dips\n4 Ring Rows\n10/8 Echo Bikes\n3 Dumbbell Snatches, 22.5/15 kg\n3 Ring Dips\n3 Ring Rows\n10/8 Echo Bikes\n2 Dumbbell Snatches, 22.5/15 kg\n2 Ring Dips\n2 Ring Rows\n10/8 Echo Bikes\n2 Dumbbell Snatches, 22.5/15 kg\n2 Ring Dips\n2 Ring Rows\n10/8 Echo Bikes\n1 Dumbbell Snatch, 22.5/15 kg\n1 Ring Dip\n1 Ring Row\n10/8 Echo Bikes"
+        },
+        {
+          "title": "Performance",
+          "description": "For time:\n10 Dumbbell Snatches, 22.5/15 kg\n10 Ring Dips\n10 Ring Rows\n10/8 Echo Bikes\n9 Dumbbell Snatches, 22.5/15 kg\n9 Ring Dips\n9 Ring Rows\n10/8 Echo Bikes\n8 Dumbbell Snatches, 22.5/15 kg\n8 Ring Dips\n8 Ring Rows\n10/8 Echo Bikes\n7 Dumbbell Snatches, 22.5/15 kg\n7 Ring Dips\n7 Ring Rows\n10/8 Echo Bikes\n6 Dumbbell Snatches, 22.5/15 kg\n6 Ring Dips\n6 Ring Rows\n10/8 Echo Bikes\n5 Dumbbell Snatches, 22.5/15 kg\n5 Ring Dips\n5 Ring Rows\n10/8 Echo Bikes\n4 Dumbbell Snatches, 22.5/15 kg\n4 Ring Dips\n4 Ring Rows\n10/8 Echo Bikes\n3 Dumbbell Snatches, 22.5/15 kg\n3 Ring Dips\n3 Ring Rows\n10/8 Echo Bikes\n2 Dumbbell Snatches, 22.5/15 kg\n2 Ring Dips\n2 Ring Rows\n10/8 Echo Bikes\n2 Dumbbell Snatches, 22.5/15 kg\n2 Ring Dips\n2 Ring Rows\n10/8 Echo Bikes\n1 Dumbbell Snatch, 22.5/15 kg\n1 Ring Dip\n1 Ring Row\n10/8 Echo Bikes"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "workouts": [
+        {
+          "title": "Strength cycle - back off week",
+          "description": "Front Squat 3-3-3-3-3\n\nUse the heaviest weight you can for each set.\nRest as needed between sets."
+        },
+        {
+          "title": "\"Gearbox\"",
+          "description": "6 rounds for time of:\nRun, 200 m\n20 Single Leg V-ups\nSingle Arm Dumbbell Overhead Walking Lunge, 50/35 lbs, 10 m\nSingle Arm Dumbbell Overhead Walking Lunge, 50/35 lbs, 10 m"
+        },
+        {
+          "title": "Performance",
+          "description": "6 rounds for time of:\nRun, 200 m\n20 GHD Sit-ups\nSingle Arm Dumbbell Overhead Walking Lunge, 50/35 lbs, 10 m\nSingle Arm Dumbbell Overhead Walking Lunge, 50/35 lbs, 10 m"
         }
       ]
     }
