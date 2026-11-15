@@ -1,32 +1,6 @@
 {
-  "updated_at": "2026-11-13T13:17:39.450983+01:00",
+  "updated_at": "2026-11-15T12:58:59.911392+01:00",
   "days": [
-    {
-      "date": "2026-11-13",
-      "workouts": [
-        {
-          "title": "TEAMWOD",
-          "description": "For time:\n9 rounds of:\n3 Burpee Box Jumps, 24/20 in\n6 Chest-to-bar Pull-ups\n9 Power Cleans, 40/30 kg\nRow, 1200/900 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Chest-to-bar Pull-ups\n12 Power Cleans, 40/30 kg\nRow, 1500/1200 m\n-- then --\nRest 3 mins\n-- then --\n3 rounds of:\n6 Burpee Box Jumps, 24/20 in\n12 Chest-to-bar Pull-ups\n15 Power Cleans, 40/30 kg\nRow, 1800/1500 m"
-        },
-        {
-          "title": "TEAMWOD - Performance",
-          "description": "For time:\n9 rounds of:\n2 Burpee Box Jumps, 24/20 in\n6 Muscle-ups\n9 Power Cleans, 40/30 kg\nRow, 1200/900 m\n-- then --\nRest 3 mins\n-- then --\n6 rounds of:\n4 Burpee Box Jumps, 24/20 in\n8 Muscle-ups\n12 Power Cleans, 40/30 kg\nRow, 1500/1200 m\n-- then --\nRest 3 mins\n-- then --\n3 rounds of:\n6 Burpee Box Jumps, 24/20 in\n12 Muscle-ups\n15 Power Cleans, 40/30 kg\nRow, 1800/1500 m"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-14",
-      "workouts": [
-        {
-          "title": "DUO WOD \"Full Tank\"",
-          "description": "5 rounds for time of:\nRun (Together), 400 m\n24 Box Jumps, 24/20 in\n24 Wall Balls, 9/6 kg\n24 American Kettlebell Swings, 32/24 kg"
-        },
-        {
-          "title": "Performance",
-          "description": "5 rounds for time of:\nRun (Together), 400 m\n24 Box Jumps, 24/20 in\n24 Wall Balls, 9/6 kg\n24 Russian Kettlebell Swings, 32/24 kg"
-        }
-      ]
-    },
     {
       "date": "2026-11-15",
       "workouts": [
@@ -50,6 +24,10 @@
         {
           "title": "\"Launch Pad\"",
           "description": "For total rounds and reps:\nAMRAP in 2 mins of:\n3 Hang Power Cleans, 45/30 kg\n3 Burpee Box Jumps, 24/20 in\n-- then --\nRest 1 min\n-- then --\nAMRAP in 3 mins of:\n3 Hang Power Cleans, 45/30 kg\n3 Burpee Box Jumps, 24/20 in\n-- then --\nRest 1 min\n-- then --\nAMRAP in 4 mins of:\n3 Hang Power Cleans, 45/30 kg\n3 Burpee Box Jumps, 24/20 in\n\nFor each AMRAP, restart from 0."
+        },
+        {
+          "title": "Performance",
+          "description": "For total rounds and reps:\nAMRAP in 2 mins of:\n3 Hang Power Cleans, 60/42.5 kg\n3 Burpee Box Jumps, 30/24 in\n-- then --\nRest 1 min\n-- then --\nAMRAP in 3 mins of:\n3 Hang Power Cleans, 60/42.5 kg\n3 Burpee Box Jumps, 30/24 in\n-- then --\nRest 1 min\n-- then --\nAMRAP in 4 mins of:\n3 Hang Power Cleans, 60/42.5 kg\n3 Burpee Box Jumps, 30/24 in\n\nFor each AMRAP, restart from 0."
         }
       ]
     },
@@ -159,6 +137,32 @@
     {
       "date": "2026-11-26",
       "workouts": []
+    },
+    {
+      "date": "2026-11-27",
+      "workouts": [
+        {
+          "title": "TEAMWOD \"Deception pass\"",
+          "description": "In 34 mins do:\n18x [ 1 Row, 400 m + 18 Box Jumps, 24/20 in + 9 Burpee Pull-ups ]\nthen in the remaining time, AMRAP of:\n1 Squat Clean, 85/50 kg"
+        },
+        {
+          "title": "TEAMWOD - Performance",
+          "description": "In 34 mins do:\n18x [ 1 Row, 400 m + 18 Box Jumps, 24/20 in + 9 Ring Muscle-ups ]\nthen in the remaining time, AMRAP of:\n1 Squat Clean, 110/65 kg"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "workouts": [
+        {
+          "title": "DUO WOD \"Salt & Sweat\"",
+          "description": "10 rounds for time of:\nBike Erg, 1000 m\n20 Single Arm Dumbbell Hang Clean & Jerks, 22.5/15 kg\n4 Rope Climbs"
+        },
+        {
+          "title": "Performance",
+          "description": "10 rounds for time of:\nBike Erg, 1000 m\n20 Double Dumbbell Hang Clean & Jerks, 22.5/15 kg\n4 Rope Climbs"
+        }
+      ]
     }
   ]
 }
