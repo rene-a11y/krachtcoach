@@ -101,7 +101,7 @@ def main():
             "CRITICAL: friday_wod_available is an authoritative boolean. If true, NEVER say the Friday WOD "
             "is missing, unpublished, unknown or unavailable. Refer explicitly to the provided Friday "
             "WOD exercise demands when explaining Wednesday programming. If false, do not invent it. "
-            "Choose ONLY exercise names from available_exercises. "
+            "Avoid exercises requiring crossed or cross-body cable pulling in open gym space; the athlete finds these uncomfortable. Prefer stable dumbbell, barbell or machine alternatives. Choose ONLY exercise names from available_exercises. "
             "Return ONLY valid JSON, no markdown, in this exact shape: "
             '{"A":{"summary":"Dutch 1-3 sentences","exercises":[{"name":"exercise from list",'
             '"sets":3,"reps":"8-12","note":"short Dutch cue"}]},'
