@@ -86,7 +86,7 @@ def main():
             "friday_wod_titles": friday_titles,
             "available_exercises": list(EXERCISES),
             "goal": "Upper body hypertrophy (chest, back width/thickness, shoulders, arms)",
-            "schedule": "Gym Monday (A, moderate upper-body session with 3-4 reps in reserve to protect Tuesday CrossFit), CrossFit Tuesday, Gym Wednesday (B, primary hypertrophy session adjusted to Tuesday and Friday WODs), rest Thursday, CrossFit Friday, running on weekend",
+            "schedule": "Gym Sunday (A, 30-minute upper-body supersets with 3-4 reps in reserve, rest Monday to protect Tuesday CrossFit), CrossFit Tuesday, Gym Wednesday (B, primary hypertrophy session adjusted to Tuesday and Friday WODs), rest Thursday, CrossFit Friday, running on weekend",
             "session_minutes": "45-60",
             "training_level": "CrossFit beginner, recreational running, progressive resistance training",
         }
@@ -97,7 +97,7 @@ def main():
             "include alternatives for different levels: do not assume the athlete performs all "
             "alternatives. If Friday WOD is missing, say uncertainty explicitly and keep Wednesday "
             "conservative. Never invent WOD content. No max-effort sets or pain-provoking movements. "
-            "On Monday use 3-4 reps in reserve and avoid excessive fatigue before Tuesday CrossFit. On Wednesday prioritize hypertrophy with 2-3 reps in reserve, adapting to Tuesday's WOD and preserving Friday CrossFit performance. Include sensible progression cues. "
+            "On Sunday use 3-4 reps in reserve, 30 minutes maximum including warm-up, and paired push/pull supersets to avoid excessive fatigue before Tuesday CrossFit. On Wednesday prioritize hypertrophy with 2-3 reps in reserve, adapting to Tuesday's WOD and preserving Friday CrossFit performance. Include sensible progression cues. "
             "CRITICAL: friday_wod_available is an authoritative boolean. If true, NEVER say the Friday WOD "
             "is missing, unpublished, unknown or unavailable. Refer explicitly to the provided Friday "
             "WOD exercise demands when explaining Wednesday programming. If false, do not invent it. "
@@ -107,7 +107,7 @@ def main():
             '"sets":3,"reps":"8-12","note":"short Dutch cue"}]},'
             '"B":{"summary":"Dutch 1-3 sentences","exercises":[{"name":"exercise from list",'
             '"sets":2,"reps":"10-12","note":"short Dutch cue"}]}}. '
-            "Each day 5-7 exercises, 2-4 sets each. Write summaries and notes in Dutch. "
+            Day A Sunday: exactly 4 exercises in two paired supersets, 2-3 sets each, 30 minutes total including warm-up. Day B Wednesday: 5-7 exercises, 2-4 sets each. Write summaries and notes in Dutch. "
             "Only output the JSON object."
         )
         payload = json.dumps({
@@ -147,7 +147,7 @@ def main():
             if day not in plan or not isinstance(plan[day].get("summary"), str):
                 raise RuntimeError(f"Claude plan missing {day} summary")
             exercises = plan[day].get("exercises")
-            if not isinstance(exercises, list) or not 5 <= len(exercises) <= 7:
+            if not isinstance(exercises, list) or not (len(exercises) == 4 if day == "A" else 5 <= len(exercises) <= 7):
                 raise RuntimeError(f"Claude plan has invalid {day} exercises")
             for ex in exercises:
                 if ex.get("name") not in EXERCISES or type(ex.get("sets")) is not int or not 1 <= ex["sets"] <= 4:
