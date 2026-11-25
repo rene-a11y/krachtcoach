@@ -107,7 +107,7 @@ def main():
             '"sets":3,"reps":"8-12","note":"short Dutch cue"}]},'
             '"B":{"summary":"Dutch 1-3 sentences","exercises":[{"name":"exercise from list",'
             '"sets":2,"reps":"10-12","note":"short Dutch cue"}]}}. '
-            Day A Sunday: exactly 4 exercises in two paired supersets, 2-3 sets each, 30 minutes total including warm-up. Day B Wednesday: 5-7 exercises, 2-4 sets each. Write summaries and notes in Dutch. "
+            Day A Sunday: 5-7 exercises, 2-3 sets each, 45-60 minutes including warm-up; the app separately provides an optional 30-minute quick session. Day B Wednesday: 7-8 exercises, typically 20-24 working sets total, 2-4 sets each, target 50-60 minutes including warm-up, rest and transitions. The athlete reported finishing a previous Wednesday session in 35 minutes; add 1-2 useful accessory exercises rather than artificially prolonging rest. Prioritize upper-body hypertrophy, avoid redundant or excessive loading around CrossFit, and adjust exercise selection autonomously each week. Write summaries and notes in Dutch. "
             "Only output the JSON object."
         )
         payload = json.dumps({
@@ -147,7 +147,7 @@ def main():
             if day not in plan or not isinstance(plan[day].get("summary"), str):
                 raise RuntimeError(f"Claude plan missing {day} summary")
             exercises = plan[day].get("exercises")
-            if not isinstance(exercises, list) or not (len(exercises) == 4 if day == "A" else 5 <= len(exercises) <= 7):
+            if not isinstance(exercises, list) or not (5 <= len(exercises) <= 7 if day == "A" else 7 <= len(exercises) <= 8):
                 raise RuntimeError(f"Claude plan has invalid {day} exercises")
             for ex in exercises:
                 if ex.get("name") not in EXERCISES or type(ex.get("sets")) is not int or not 1 <= ex["sets"] <= 4:
