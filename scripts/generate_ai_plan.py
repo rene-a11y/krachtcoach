@@ -17,14 +17,14 @@ PREFERRED_MODELS = ("claude-sonnet-4-6", "claude-sonnet-4-5", "claude-sonnet-4-2
 EXERCISES = {
     "Barbell bench press": ("🏋️", "Borst"),
     "Lat pulldown": ("↙️", "Brede rug"),
-    "Chest-supported dumbbell row": ("🚣", "Rugdikte"),
+    "Chest-supported machine row": ("🚣", "Rugdikte"),
     "Incline dumbbell press": ("💪", "Bovenborst"),
     "Dumbbell lateral raise": ("🙆", "Zijkant schouders"),
     "Reverse fly": ("🪽", "Achterste schouder"),
     "Hammer curl": ("💪", "Biceps"),
     "Biceps curl": ("💪", "Biceps"),
     "Cable triceps pushdown": ("💪", "Triceps"),
-    "Pec deck": ("💪", "Borst"),
+    "Pec Deck Machine": ("💪", "Borst"),
     "Cable row": ("🚣", "Rug"),
     "Face pull": ("🪽", "Achterste schouder"),
 }
