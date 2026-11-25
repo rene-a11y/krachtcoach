@@ -33,10 +33,10 @@
             "focus": "Zijkant schouders"
           },
           {
-            "name": "Chest-supported dumbbell row",
+            "name": "Chest-supported machine row",
             "sets": 3,
             "reps": "10-12",
-            "note": "Borst op bank voor stabiele positie; focus op retractie schouderblad, niet op gewicht",
+            "note": "Borst tegen borststeun voor stabiele positie; focus op retractie schouderblad, niet op gewicht",
             "icon": "🚣",
             "focus": "Rugdikte"
           },
@@ -94,7 +94,7 @@
             "focus": "Achterste schouder"
           },
           {
-            "name": "Pec deck",
+            "name": "Pec Deck Machine",
             "sets": 3,
             "reps": "12-15",
             "note": "Machine geeft stabiele belasting; 2-3 RIR, stretch in open positie bewust voelen",
